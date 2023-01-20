@@ -37,7 +37,7 @@ const App = () => (
           <Link to="/">
             CryptoBlip
           </Link> <br />
-          Copyright © 2021 <br />
+          West Coast Creatives LLC © 2021 <br />
         </Typography.Title>
         <Space>
           <Link to="/">Home</Link>

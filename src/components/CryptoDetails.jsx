@@ -48,7 +48,7 @@ const CryptoDetails = () => {
           ({data?.data?.coin.slug})
           Price
         </Title>
-        <p>{cryptoDetails.name} current price USD. View value statistics, market cap, and supply.</p>
+        <p>{cryptoDetails.name}'s current price USD, value statistics, market cap, & supply information.</p>
       </Col>
       {/* '7d' is seven days */}
       <Select
@@ -67,7 +67,7 @@ const CryptoDetails = () => {
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
             <Title level={3} className="coin-details-heading">{cryptoDetails.name} Value Statistics</Title>
-            <p>An overview showing the statistics of {cryptoDetails.name}, such as the base and quote currency, the rank, and trading volume.</p>
+            <p>An overview of {cryptoDetails.name} statistics, such as the base/quote currency, rank, and trading volume.</p>
           </Col>
           {/* maps over the stats we got from the api */}
           {stats.map(({ icon, title, value }) => (
@@ -82,8 +82,8 @@ const CryptoDetails = () => {
         </Col>
         <Col className="other-stats-info">
           <Col className="coin-value-statistics-heading">
-            <Title level={3} className="coin-details-heading">Other Stats Info</Title>
-            <p>An overview showing the statistics of {cryptoDetails.name}, such as the base and quote currency, the rank, and trading volume.</p>
+            <Title level={3} className="coin-details-heading">Other Info</Title>
+            <p>More {cryptoDetails.name} stats.</p>
           </Col>
           {genericStats.map(({ icon, title, value }) => (
             <Col className="coin-stats">
